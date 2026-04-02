@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/RajVishal7/devops-industry-project.git'
-            }
-        }
-
         stage('Build & Run') {
             steps {
                 sh '''
